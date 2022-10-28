@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hair Day</title>
+    </head>
+    <style>
+     :root{
+            --primary-color: rgb(248, 222, 213);
+            --secondary-color: green;
+            --tertiary-color: black;
+        }
+    body{background-color: var(--primary-color);}
+    header{text-align: center;}
+   .nav1{
+        display: grid;
+        grid-template-columns: repeat(4, 60px);
+        justify-content: center;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        grid-gap: 30px;
+    }
+    main{
+        text-align: center;
+        background-image: url(hero.jpg);
+        background-size: 100%;
+        padding-bottom: 650px;
+        background-repeat: no-repeat;
+    }
+    .p1{
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    .btn1{
+    margin: 1%;
+    padding: 1ch;
+    color: aliceblue;
+    background-color: var(--secondary-color);
+    }
+    .btn2{
+    margin: 1%;
+    padding: 1ch;
+    background-color: none;
+    }
+.services{
+    display: flex;
+    padding: 10px 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+.mens-haircut, .nails-cut, .body-massage{   
+    border-style: groove;
+    border-color: var(--primary-color);
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+h2{
+    text-align: center;
+    margin-top: 50px;
+}
+.fotr{
+    background-color: var(--tertiary-color);
+    padding: 20px;
+    color: aliceblue;
+    }
+.fotr img{
+    margin-top: 20px;
+    float: left;
+}
+.fotr p{
+    text-align: end;
+}
+</style>
+<body>
+    <header>
+        <img src="logo.png" alt="logo" width="150" height="100">
+    </header>
+        <nav class="nav1">   
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+        </nav>
+<main>
+    <h1>Hair Day</h1>
+    <p class="p1">
+        Based in Madison, Winsconsin, Hair Day is a boutique hair salon that specializes in cut, color and styling, Hair Day
+        also offers make up and nail services, prides itself on its warm and relaxing atmosphere and is best known for edgy hair color on-trend cuts.
+    </p>
+<form>
+    <button class="btn1">BOOK NOW</button>
+    <button class="btn2">LEARN MORE</button>
+</form>
+</main>
+ <h2>Our Services</h2>
+<div class="services">
+   <div class="mens-haircut">
+    <span><img src="scissors-solid.svg" width="50px" height="30px"></span>
+    <h2>Men's Haircut</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+        dummy text ever since when an unknown printer took a galley of type and scrambled  to make a type specimen.</p>
+   </div>
+   <div class="nails-cut">
+    <span><img src="hand-solid.svg" width="50px" height="30px"></span>
+    <h2>Nail's Cut</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+     dummy text ever since when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+    </div>
+   <div class="body-massage">
+    <span><img src="spa-solid.svg" width="50px" height="30px"></span>
+    <h2>Body Massage</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+     dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+    </div>
+</div>
+</body>
+<footer>
+    <div class="fotr">
+    <img src="logo3.png" width="100" class="fotr-img">
+    <p>Copyright © 2022, Jhames Russell Nalus made with ♥</p>
+    </div>
+</footer>
+</html>

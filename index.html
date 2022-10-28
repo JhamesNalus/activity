@@ -14,6 +14,11 @@
         }
     body{background-color: var(--primary-color);}
     header{text-align: center;}
+    a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
    .nav1{
         display: grid;
         grid-template-columns: repeat(4, 60px);
@@ -21,17 +26,18 @@
         margin-top: 3%;
         margin-bottom: 3%;
         grid-gap: 30px;
+        
     }
     main{
         text-align: center;
         background-image: url(hero.jpg);
         background-size: 100%;
-        padding-bottom: 650px;
+        padding-bottom: 600px;
         background-repeat: no-repeat;
     }
     .p1{
-        margin-left: 150px;
-        margin-right: 150px;
+      justify-content: center;
+      margin: 5%;
     }
     .btn1{
     margin: 1%;
@@ -45,7 +51,7 @@
     background-color: none;
     }
 .services{
-    display: flex;
+
     padding: 10px 20px;
     margin-left: 10px;
     text-align: center;
@@ -56,12 +62,11 @@
     padding: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 50px;
-    margin-bottom: 100px;
+
 }
 h2{
     text-align: center;
-    margin-top: 50px;
+
 }
 .fotr{
     background-color: var(--tertiary-color);
@@ -70,11 +75,37 @@ h2{
     }
 .fotr img{
     margin-top: 20px;
+
     float: left;
 }
 .fotr p{
     text-align: end;
 }
+@media only screen and (max-width:800px) {
+    .p1{
+        display:  grid;
+    }
+    .services{
+        display: grid;      
+        }
+    .nav1{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+@media only screen and (max-width:500px) {
+    .p1{
+        display: grid;
+    }
+    .services{
+        display: grid;      
+        }
+    .nav1{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
 </style>
 <body>
     <header>
